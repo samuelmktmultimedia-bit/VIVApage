@@ -1,1 +1,44 @@
-<h1>VIVApage</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bienestar Digital y Ciberseguridad</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <!-- El logo + el título son el botón de Inicio: al pulsarlos se vuelve a la
+       pantalla de portada, por eso el grupo va en un <button> y no en un <div>.
+       Dentro del botón solo puede haber contenido de frase, así que .brand-block,
+       .brand y .tagline son <span> (el CSS les da display:block para apilarlos). -->
+    <button type="button" id="homeBtn" class="topbar-start brand-home">
+      <img class="brand-logo" src="imagenes/VIVA LOGO 3.png" alt="Logotipo de VIVA">
+      <span class="brand-block">
+        <span class="brand">VIVA <span class="brand-accent">&mdash; Virtual Intelligence &amp; Vitality for All</span></span>
+        <span class="tagline">Vive conectado. Vive equilibrado. Vive VIVA</span>
+      </span>
+    </button>
+    <button id="langToggle" class="lang-btn" aria-label="Cambiar idioma">EN</button>
+  </header>
+
+  <nav class="navbar" id="mainNav" aria-label="Navegación principal">
+    <!-- Los botones de navegación se generan en script.js a partir de DATA.nav -->
+  </nav>
+
+  <nav class="subnav" id="subNav" hidden aria-label="Subsecciones">
+    <!-- Pestañas de las 2 subsecciones del módulo activo, generadas en script.js -->
+  </nav>
+
+  <main id="content" class="content">
+    <!-- Contenido de la pantalla activa, generado en script.js -->
+  </main>
+
+  <footer class="footer">
+    <p id="footerText"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
